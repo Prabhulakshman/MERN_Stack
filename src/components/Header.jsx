@@ -1,8 +1,7 @@
 import {FaSearch} from 'react-icons/fa';
 import{Link} from'react-router-dom';
-import React from 'react'
-
-export default function header() {
+import React from 'react';
+export default function Header() {
   return (
     <header className="bg-stone-950 shadow-md">
             <div className='flex justify-between items-center font-serif max-w-6xl mx-auto p-3'>
@@ -27,8 +26,8 @@ export default function header() {
                     <Link to='/About'>
                     <li className='hidden sm:inline text-teal-200 hover:underline'>About</li>
                     </Link>
-                    <Link to='/Signin'>
-                    <li className='hidden sm:inline text-teal-200 hover:underline'>Sign In</li>
+                    <Link to='/Signup'>
+                    <li className='hidden sm:inline text-teal-200 hover:underline'>Sign up</li>
                     </Link>
                 </ul>
             </div>
