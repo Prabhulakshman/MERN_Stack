@@ -45,7 +45,7 @@ export const signup=async(req,res,next)=>{
             }
             else{
                 const generatedPassword=Math.random().toString(36).slice(-8)+Math.random().toString(36).slice(-8);
-                const hashedPssword=bcryptjs.hashSync(generatedPassword,10);
+                const hashedPassword=bcryptjs.hashSync(generatedPassword,10);
                 const newUser=new User({
                     username:req.body.name.split(" ").join("").toLowerCase()+Math.random().toString(36).slice(-4),
                     email:req.body.email,
